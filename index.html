@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1eee7">
+  <meta name="description" content="Guia de revisão de Geografia: China, Taiwan e África, com base nos materiais da aula.">
+  <title>Atlas de prova — Geografia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f1eee7;
+      --paper-deep: #e6e1d6;
+      --ink: #202b25;
+      --muted: #68736b;
+      --green: #264c3c;
+      --green-dark: #18372c;
+      --red: #ad442e;
+      --yellow: #e7b64d;
+      --line: #c9c7bb;
+      --white: #fbfaf6;
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "DM Sans", "Segoe UI", sans-serif;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --paper: #171d19;
+      --paper-deep: #202923;
+      --ink: #edf0e8;
+      --muted: #b1bbaf;
+      --green: #355d4a;
+      --green-dark: #101813;
+      --red: #ed896b;
+      --yellow: #e8be68;
+      --line: #414c44;
+      --white: #252d27;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      transition: background-color .2s ease, color .2s ease;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 3px;
+    }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topbar {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    .topbar-inner {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .brand-mark {
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      background: var(--red);
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: 20px;
+      line-height: 1;
+    }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .nav-links a:hover { color: var(--red); }
+    .theme-toggle {
+      min-height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0 11px;
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .theme-toggle:hover { background: var(--paper-deep); }
+    .theme-toggle svg { width: 16px; height: 16px; }
+    .theme-toggle .icon-sun, .theme-toggle[aria-pressed="true"] .icon-moon { display: none; }
+    .theme-toggle[aria-pressed="true"] .icon-sun { display: block; }
+
+    .hero { padding: 72px 0 67px; overflow: hidden; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      align-items: center;
+      gap: 64px;
+    }
+    .eyebrow, .section-kicker {
+      margin: 0 0 15px;
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      max-width: 680px;
+      margin-bottom: 22px;
+      font-family: var(--serif);
+      font-size: clamp(52px, 6vw, 82px);
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: .98;
+    }
+    h1 span { color: var(--red); }
+    .hero-copy {
+      max-width: 525px;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 17px;
+      border: 1px solid var(--green);
+      background: var(--green);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .18s ease, transform .18s ease;
+    }
+    .button:hover { background: var(--green-dark); transform: translateY(-2px); }
+    .button.secondary { background: transparent; color: var(--green); }
+    .button.secondary:hover { background: var(--white); }
+    .hero-visual { position: relative; padding: 14px 14px 32px 32px; }
+    .hero-visual::before {
+      position: absolute;
+      z-index: -1;
+      inset: 0 36px 22px 0;
+      border: 1px solid var(--green);
+      content: "";
+    }
+    .hero-visual img {
+      width: 100%;
+      aspect-ratio: 1.08;
+      display: block;
+      object-fit: cover;
+      object-position: center 38%;
+      filter: saturate(.72);
+    }
+    .image-note {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: min(225px, 75%);
+      padding: 13px 16px;
+      background: var(--yellow);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    .hero-index {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      margin-top: 54px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .index-item {
+      min-width: 145px;
+      flex: 1;
+      padding: 16px 16px 15px 0;
+    }
+    .index-item + .index-item { padding-left: 20px; border-left: 1px solid var(--line); }
+    .index-item strong { display: block; font-family: var(--serif); font-size: 22px; font-weight: 600; }
+    .index-item span { color: var(--muted); font-size: 11px; }
+
+    .toolbar { padding: 20px 0; background: var(--green-dark); color: white; }
+    .toolbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .filter-group { display: flex; flex-wrap: wrap; gap: 7px; }
+    .filter-button {
+      min-height: 36px;
+      padding: 0 13px;
+      border: 1px solid rgba(255,255,255,.35);
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      transition: background .18s ease, color .18s ease;
+    }
+    .filter-button:hover, .filter-button[aria-pressed="true"] { background: var(--yellow); color: var(--ink); border-color: var(--yellow); }
+    .search-wrap { position: relative; width: min(310px, 100%); }
+    .search-wrap svg { position: absolute; left: 12px; top: 50%; width: 16px; height: 16px; transform: translateY(-50%); }
+    .search-wrap input {
+      width: 100%;
+      min-height: 38px;
+      padding: 8px 12px 8px 37px;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 0;
+      background: rgba(255,255,255,.1);
+      color: white;
+      font-size: 12px;
+    }
+    .search-wrap input::placeholder { color: rgba(255,255,255,.72); }
+
+    main { padding: 20px 0 0; }
+    .content-section { padding: 72px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 20px; }
+    .section-heading {
+      display: grid;
+      grid-template-columns: 1fr minmax(230px, 360px);
+      align-items: end;
+      gap: 40px;
+      margin-bottom: 36px;
+    }
+    h2 {
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 1.03;
+    }
+    .section-intro { margin: 0; color: var(--muted); font-size: 14px; }
+    .china-band {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 38px;
+      padding: 30px;
+      background: var(--green);
+      color: white;
+    }
+    .china-band h3, .africa-band h3 { margin: 0 0 9px; font-family: var(--serif); font-size: 27px; font-weight: 500; }
+    .china-band p { margin: 0; color: rgba(255,255,255,.78); font-size: 13px; }
+    .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+    .timeline-item { padding: 2px 18px 0; border-left: 1px solid rgba(255,255,255,.35); }
+    .timeline-item:first-child { border-left: 0; padding-left: 0; }
+    .timeline-item strong { display: block; margin-bottom: 8px; color: var(--yellow); font-family: var(--serif); font-size: 23px; }
+    .timeline-item span { font-size: 12px; line-height: 1.5; }
+    .topic-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 24px; border-top: 1px solid var(--line); }
+    .topic-card { padding: 25px 23px 26px 0; border-bottom: 1px solid var(--line); }
+    .topic-card:not(:nth-child(3n + 1)) { padding-left: 23px; border-left: 1px solid var(--line); }
+    .topic-card h3 { margin-bottom: 9px; font-size: 16px; line-height: 1.35; }
+    .topic-card p { margin: 0; color: var(--muted); font-size: 13px; }
+    .topic-explanation { margin-top: 13px; border: 0; }
+    .topic-explanation summary { padding: 9px 28px 0 0; color: var(--green); font-size: 12px; font-weight: 700; }
+    .topic-explanation summary::after { top: 7px; font-size: 18px; }
+    .topic-explanation[open] summary { padding-bottom: 8px; }
+    .topic-explanation p { max-width: 580px; padding: 0; font-size: 12px; line-height: 1.65; }
+    .topic-explanation p + p { margin-top: 9px; }
+    .card-number { display: block; margin-bottom: 12px; color: var(--red); font-size: 11px; font-weight: 700; letter-spacing: .1em; }
+    .inline-note { padding: 15px 18px; border-left: 3px solid var(--yellow); background: var(--paper-deep); color: var(--muted); font-size: 12px; }
+    .inline-note strong { color: var(--ink); }
+
+    .africa-section { background: var(--paper-deep); }
+    .africa-band {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      padding: 31px;
+      background: var(--red);
+      color: white;
+    }
+    .africa-band p { margin: 0; color: rgba(255,255,255,.86); font-size: 13px; }
+    .stat-block { display: flex; align-items: baseline; gap: 14px; }
+    .stat-block strong { color: var(--yellow); font-family: var(--serif); font-size: 54px; font-weight: 600; line-height: 1; }
+    .stat-block span { max-width: 165px; font-size: 12px; }
+    .africa-section .topic-grid { border-color: var(--line); }
+    .africa-section .topic-card { border-color: var(--line); }
+    .concept-compare { display: grid; grid-template-columns: 1fr 1fr; margin-top: 38px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .compare-item { padding: 24px 26px 25px 0; }
+    .compare-item + .compare-item { padding-left: 26px; border-left: 1px solid var(--line); }
+    .compare-item h3 { margin-bottom: 7px; color: var(--red); font-size: 14px; }
+    .compare-item p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .review-section { padding: 72px 0 85px; }
+    .review-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 60px; }
+    .review-aside p { max-width: 300px; margin-top: 19px; color: var(--muted); font-size: 14px; }
+    .review-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary {
+      position: relative;
+      padding: 17px 35px 17px 0;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 700;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { position: absolute; right: 4px; content: "+"; color: var(--red); font-size: 23px; font-weight: 400; line-height: 1; }
+    details[open] summary::after { content: "−"; }
+    details p { max-width: 700px; margin: 0; padding: 0 35px 18px 0; color: var(--muted); font-size: 13px; }
+    .no-results { display: none; padding: 28px 0; color: var(--muted); font-size: 14px; }
+    footer { padding: 25px 0; background: var(--green-dark); color: rgba(255,255,255,.8); }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 22px; font-size: 11px; }
+    .source-links { display: flex; flex-wrap: wrap; gap: 18px; }
+    .source-links a { color: white; text-underline-offset: 3px; }
+    [hidden] { display: none !important; }
+
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 32px, 600px); }
+      .topbar-inner { min-height: 62px; }
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: 11px; }
+      .theme-toggle { min-height: 36px; padding-inline: 9px; }
+      .hero { padding: 45px 0 42px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 35px; }
+      h1 { max-width: 580px; font-size: clamp(50px, 12vw, 74px); }
+      .hero-copy { font-size: 15px; }
+      .hero-visual { max-width: 450px; }
+      .hero-index { margin-top: 34px; }
+      .index-item { min-width: 33%; }
+      .index-item + .index-item { padding-left: 12px; }
+      .toolbar-inner { align-items: stretch; flex-direction: column; }
+      .search-wrap { width: 100%; }
+      .content-section, .review-section { padding: 53px 0; }
+      .section-heading { grid-template-columns: 1fr; gap: 15px; margin-bottom: 27px; }
+      .section-intro { max-width: 500px; }
+      .china-band { grid-template-columns: 1fr; gap: 25px; padding: 23px; }
+      .timeline-item { padding-inline: 12px; }
+      .timeline-item strong { font-size: 19px; }
+      .timeline-item span { font-size: 11px; }
+      .topic-grid { grid-template-columns: repeat(2, 1fr); }
+      .topic-card { padding: 21px 14px 21px 0; }
+      .topic-card:not(:nth-child(3n + 1)) { padding-left: 0; border-left: 0; }
+      .topic-card:nth-child(even) { padding-left: 14px; border-left: 1px solid var(--line); }
+      .africa-section .topic-card:nth-child(even) { border-left-color: var(--line); }
+      .africa-band { grid-template-columns: 1fr; gap: 18px; padding: 24px; }
+      .stat-block strong { font-size: 47px; }
+      .concept-compare { grid-template-columns: 1fr; }
+      .compare-item { padding: 20px 0; }
+      .compare-item + .compare-item { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+      .review-layout { grid-template-columns: 1fr; gap: 23px; }
+      .review-aside p { max-width: 480px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 410px) {
+      .nav-links { gap: 10px; }
+      .nav-links a { font-size: 10px; }
+      .theme-toggle span { display: none; }
+      .theme-toggle { width: 36px; padding: 0; }
+      .brand { font-size: 11px; }
+      .brand-mark { width: 26px; height: 26px; }
+      .filter-button { padding-inline: 10px; font-size: 11px; }
+      .index-item strong { font-size: 19px; }
+      .topic-card h3 { font-size: 14px; }
+      .topic-card p { font-size: 12px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    try {
+      if (localStorage.getItem("atlas-theme") === "dark") document.documentElement.dataset.theme = "dark";
+    } catch {}
+  </script>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Atlas de prova, início"><span class="brand-mark">A</span> Atlas de prova</a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#china">China &amp; Taiwan</a>
+        <a href="#africa">África</a>
+        <a href="#revisao">Revisão</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar tema escuro" title="Ativar tema escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.7 8.7 0 1 0 20.2 15.2Z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+        <span>Escuro</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Geografia · guia de estudos</p>
+          <h1>Território,<br>poder e <span>mudança.</span></h1>
+          <p class="hero-copy">Um caderno de revisão para conectar as transformações da China, a questão de Taiwan e a diversidade histórica e regional do continente africano.</p>
+          <div class="hero-actions">
+            <a class="button" href="#china">Começar a estudar <span aria-hidden="true">↘</span></a>
+            <a class="button secondary" href="#revisao">Ir para perguntas</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="geo.jpeg" alt="Roteiro da avaliação de Geografia com os temas China, Taiwan e África">
+          <figcaption class="image-note">Roteiro da avaliação<br>China · Taiwan · África</figcaption>
+        </figure>
+      </div>
+      <div class="hero-index" aria-label="Conteúdos do guia">
+        <div class="index-item"><strong>01</strong><span>China e Taiwan</span></div>
+        <div class="index-item"><strong>02</strong><span>África: regiões e diversidade</span></div>
+        <div class="index-item"><strong>03</strong><span>Colonialismo e neocolonialismo</span></div>
+        <div class="index-item"><strong>04</strong><span>Revisão ativa</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="toolbar" aria-label="Ferramentas de estudo">
+    <div class="wrap toolbar-inner">
+      <div class="filter-group" role="group" aria-label="Filtrar assuntos">
+        <button class="filter-button" type="button" data-filter="all" aria-pressed="true">Todos</button>
+        <button class="filter-button" type="button" data-filter="china" aria-pressed="false">China &amp; Taiwan</button>
+        <button class="filter-button" type="button" data-filter="africa" aria-pressed="false">África</button>
+        <button class="filter-button" type="button" data-filter="revisao" aria-pressed="false">Revisão</button>
+      </div>
+      <label class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        <input id="search" type="search" placeholder="Buscar um tema..." aria-label="Buscar nos conteúdos">
+      </label>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap"><p class="no-results" id="no-results" role="status">Nenhum assunto encontrado. Tente outra palavra ou altere o filtro.</p></div>
+    <section class="content-section" id="china" data-section="china">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="section-kicker">01 / Ásia oriental</p><h2>China &amp; Taiwan</h2></div>
+          <p class="section-intro">A ascensão econômica chinesa convive com um sistema político centralizado e com tensões geopolíticas que atravessam o estreito de Taiwan.</p>
+        </div>
+
+        <div class="china-band" data-topic="china">
+          <div><h3>Uma potência em transformação</h3><p>O material relaciona reformas econômicas, urbanização e integração comercial à projeção global da China. O crescimento econômico não significou a abertura do sistema político de partido único.</p></div>
+          <div class="timeline" aria-label="Marcos políticos e econômicos">
+            <div class="timeline-item"><strong>Mao</strong><span>Revolução e construção do Estado socialista chinês.</span></div>
+            <div class="timeline-item"><strong>Deng</strong><span>Reformas e abertura econômica a partir do fim dos anos 1970.</span></div>
+            <div class="timeline-item"><strong>Hoje</strong><span>Partido único, forte presença estatal e atuação econômica global.</span></div>
+          </div>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">CHINA · 01</span><h3>População e urbanização</h3>
+            <p>A escala populacional e a expansão das cidades ajudam a entender a concentração de pessoas, a infraestrutura e os contrastes entre áreas urbanas e rurais. Os números do PDF são estimativas datadas.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Urbanização:</strong> a industrialização acelerou a migração do campo para as cidades. A expansão urbana exigiu moradias, transporte, energia e saneamento em grande escala. Esse processo criou oportunidades de trabalho e estudo, mas também ampliou contrastes entre regiões e entre moradores urbanos e rurais.</p><p><strong>Demografia:</strong> a redução da natalidade e o aumento da expectativa de vida mudaram a estrutura etária. O envelhecimento da população pode reduzir o número relativo de trabalhadores e aumentar a demanda por aposentadorias e cuidados. Por isso, ao analisar os números do PDF, observe a data e diferencie população total, crescimento e composição etária.</p></details>
+          </article>
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">CHINA · 02</span><h3>Economia conectada ao mundo</h3>
+            <p>A produção industrial e a disseminação de produtos chineses integram o país às cadeias globais. O material também destaca sua presença em espaços como OMC, APEC, ONU, FMI e BRICS.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Reformas:</strong> a partir do fim dos anos 1970, Deng Xiaoping conduziu mudanças que ampliaram o uso de mecanismos de mercado e a abertura a investimentos externos. Zonas econômicas especiais atraíram fábricas, capital e tecnologia, sobretudo para áreas costeiras.</p><p><strong>Integração:</strong> a entrada na Organização Mundial do Comércio, em 2001, reforçou a conexão com cadeias globais de produção. A China passou de grande polo manufatureiro a ator central em setores tecnológicos e comerciais. O crescimento, porém, foi desigual entre litoral e interior e trouxe dependência de mercados externos e desafios ambientais.</p></details>
+          </article>
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">CHINA · 03</span><h3>Estado e liderança</h3>
+            <p>O sistema político é conduzido pelo Partido Comunista Chinês. O material identifica Xi Jinping na presidência desde 2013 e apresenta o yuan, também chamado renminbi, como moeda.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Organização política:</strong> o Partido Comunista Chinês ocupa a posição central no Estado e não há alternância nacional entre partidos por meio de eleições multipartidárias competitivas. A direção política define prioridades e mantém instrumentos de planejamento e controle.</p><p><strong>Marcos:</strong> Mao Zedong liderou a fundação da República Popular da China, em 1949; Deng Xiaoping conduziu as reformas econômicas iniciadas no fim dos anos 1970; Xi Jinping está na presidência desde 2013, conforme indicado no material. Yuan é o nome comum da unidade monetária; renminbi é o nome oficial da moeda.</p></details>
+          </article>
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">TAIWAN · 04</span><h3>Duas posições sobre a ilha</h3>
+            <p>A República Popular da China considera Taiwan parte de seu território. Taiwan mantém governo próprio, eleições e instituições próprias; seu status internacional é contestado e reconhecido de formas diferentes.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Origem da divisão:</strong> após a vitória comunista na guerra civil chinesa, em 1949, foi proclamada a República Popular da China no continente. O governo da República da China se estabeleceu em Taiwan. Formaram-se, assim, governos separados, que reivindicaram legitimidade para representar a China.</p><p><strong>Situação atual:</strong> Taiwan administra seu território, realiza eleições e possui instituições próprias. Pequim considera a ilha parte de seu território; em Taiwan coexistem diferentes posições sobre identidade e futuro político. Muitos países reconhecem diplomaticamente Pequim e mantêm relações não oficiais com Taipei. Governo próprio, reivindicação de soberania e reconhecimento internacional são conceitos diferentes.</p></details>
+          </article>
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">TAIWAN · 05</span><h3>Por que é uma questão geopolítica?</h3>
+            <p>A disputa envolve soberania, identidade política, segurança regional e relações entre grandes potências. A possibilidade de declaração formal de independência é apontada no material como ponto de tensão.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Dimensão estratégica:</strong> o estreito de Taiwan liga áreas importantes do leste asiático e é atravessado por rotas comerciais. Uma crise poderia afetar a segurança regional e provocar impactos econômicos muito além da ilha. Os Estados Unidos mantêm relações não oficiais com Taiwan e têm papel relevante no equilíbrio estratégico.</p><p><strong>Dimensão tecnológica:</strong> Taiwan é central na fabricação de semicondutores avançados, componentes usados em celulares, computadores, veículos e sistemas industriais. Essa concentração torna a estabilidade do estreito um tema econômico global. Para responder com precisão, diferencie os interesses e as posições de Pequim, Taipei e outros governos.</p></details>
+          </article>
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">CONEXÃO · 06</span><h3>Economia e poder</h3>
+            <p>Para analisar a ascensão chinesa, observe como a abertura econômica e o comércio global coexistem com a continuidade do controle político centralizado.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p>A economia chinesa não é explicada adequadamente como “totalmente planificada” nem como “livre mercado”. Empresas estatais, metas nacionais e planejamento coexistem com empresas privadas, investimento estrangeiro e concorrência. O Partido mantém forte influência sobre o Estado e setores considerados estratégicos.</p><p>Essa combinação ajuda a entender como a China se integrou à economia mundial sem democratizar seu sistema político. Crescimento econômico, abertura comercial e liberdade política são processos distintos; um não implica automaticamente os outros.</p></details>
+          </article>
+          <article class="topic-card" data-topic="china">
+            <span class="card-number">AMBIENTE · 07</span><h3>Pressões ambientais</h3>
+            <p>Relacione a rápida industrialização e a urbanização à pressão sobre recursos, energia e qualidade do ar. O desafio é conciliar crescimento econômico, saúde da população e redução dos impactos ambientais.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p>A concentração de indústrias, veículos e população urbana elevou a demanda por energia e contribuiu para episódios graves de poluição do ar. A dependência histórica do carvão torna a transição energética complexa: é preciso reduzir emissões sem comprometer o abastecimento e a atividade econômica.</p><p>A China ampliou investimentos em fontes renováveis e tecnologias de baixo carbono, mas isso não elimina os impactos acumulados nem resolve sozinho a qualidade do ar, da água e do solo. Uma boa análise relaciona o modelo e o ritmo de crescimento às medidas adotadas e aos desafios que permanecem.</p></details>
+          </article>
+        </div>
+        <p class="inline-note" data-topic="china"><strong>Atenção aos dados:</strong> população, PIB e cargos políticos mudam com o tempo. O PDF usa números e referências de uma data específica; confira a versão original ao responder questões que peçam esses valores.</p>
+      </div>
+    </section>
+
+    <section class="content-section africa-section" id="africa" data-section="africa">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="section-kicker">02 / Continente africano</p><h2>África plural</h2></div>
+          <p class="section-intro">Uma leitura geográfica do continente precisa reconhecer diferenças entre países, regiões, paisagens, sociedades e trajetórias históricas.</p>
+        </div>
+
+        <div class="africa-band" data-topic="africa">
+          <div><h3>Um continente, muitas realidades</h3><p>O material apresenta paisagens que vão do Saara às savanas, florestas tropicais, áreas mediterrâneas e grandes lagos. Recursos naturais importantes não se distribuem igualmente nem garantem, por si só, desenvolvimento.</p></div>
+          <div class="stat-block"><strong>54</strong><span>países reconhecidos pela ONU no recorte apresentado no PDF</span></div>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">TERRITÓRIO · 01</span><h3>Regionalização</h3>
+            <p>Dividir o continente em regiões ajuda a comparar características e processos históricos. As fronteiras e os critérios mudam conforme o recorte usado; regionalizar não significa tratar cada região como homogênea.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Critérios:</strong> uma regionalização pode considerar clima, relevo, economia, história, língua ou relações políticas. Uma divisão bastante usada diferencia Norte da África e África Subsaariana, mas ela não representa uma separação natural ou cultural absoluta.</p><p><strong>Faixas de transição:</strong> o Saara é uma grande região desértica; ao sul, o Sahel forma uma zona de transição para áreas de savana. Essas paisagens influenciam circulação, agricultura e disponibilidade de água, mas não determinam sozinhas a cultura ou a economia de cada sociedade. Compare sempre os critérios do mapa ou do texto usado.</p></details>
+          </article>
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">NATUREZA · 02</span><h3>Paisagens e recursos</h3>
+            <p>O PDF cita petróleo, gás, ouro, cobre, cobalto, manganês, urânio, lítio e outros minerais, além de paisagens diversas. A presença de recursos não elimina desigualdades sociais ou econômicas.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Ambientes:</strong> o continente inclui o Saara e outros desertos, savanas, florestas equatoriais, planaltos, grandes bacias hidrográficas e áreas de clima mediterrâneo. A distribuição de água, solos e recursos varia muito entre regiões.</p><p><strong>Recursos e desenvolvimento:</strong> petróleo, gás e minerais são importantes para exportações e para a indústria mundial. A riqueza natural não se converte automaticamente em bem-estar: importam os contratos, a tributação, o processamento local, a proteção ambiental e a distribuição das receitas. Por isso, explique a relação entre recursos e desenvolvimento sem afirmar que todos os países africanos têm a mesma experiência.</p></details>
+          </article>
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">HISTÓRIA · 03</span><h3>Colonialismo</h3>
+            <p>Domínio político e territorial direto, com administração colonial. Esse modelo marcou fronteiras, economias e relações de poder cuja influência permanece na história contemporânea.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Partilha:</strong> na Conferência de Berlim (1884–1885), potências europeias estabeleceram regras para a ocupação colonial; a conquista e a consolidação do domínio avançaram nas décadas seguintes. Fronteiras foram traçadas sem considerar, em muitos casos, organizações políticas e comunidades existentes.</p><p><strong>Consequências:</strong> as administrações coloniais organizaram territórios e infraestrutura sobretudo para extrair recursos e exportá-los. As independências ocorreram principalmente em meados do século XX, mas fronteiras, economias pouco diversificadas e desigualdades herdadas continuaram influenciando os novos Estados. Isso não significa que as sociedades africanas não tivessem história ou organização antes da colonização.</p></details>
+          </article>
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">HISTÓRIA · 04</span><h3>Neocolonialismo</h3>
+            <p>Mesmo após a independência formal, relações econômicas e políticas podem manter dependências: capital estrangeiro, influência externa e controle da exploração de recursos.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p>Neocolonialismo é um conceito para analisar formas indiretas de influência que podem persistir após o fim do domínio territorial formal. Dependência de poucos produtos de exportação, dívida externa, controle de setores estratégicos por empresas de fora e contratos com pouca retenção de renda local são exemplos frequentemente discutidos.</p><p>O conceito precisa ser aplicado com cuidado: investimento estrangeiro não é automaticamente neocolonialismo. Analise quem decide, quem assume os custos, quem recebe os lucros, quais benefícios ficam no país e que margem de negociação têm governos e populações locais.</p></details>
+          </article>
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">ECONOMIA · 05</span><h3>Comércio desigual</h3>
+            <p>Exportar matérias-primas e commodities de menor valor agregado e importar produtos industrializados ajuda a explicar obstáculos à diversificação produtiva e à industrialização.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Valor agregado:</strong> matérias-primas como minério, petróleo ou produtos agrícolas podem valer mais depois de serem transformadas em aço, combustível, máquinas ou alimentos processados. Quando a transformação ocorre fora do país produtor, uma parcela importante do valor e dos empregos industriais também pode ficar no exterior.</p><p><strong>Vulnerabilidade:</strong> depender de poucas commodities deixa a receita exposta a variações de preço e demanda internacional. Diversificar exige infraestrutura, formação profissional, financiamento e políticas industriais, além de acordos comerciais que permitam ampliar a produção local.</p></details>
+          </article>
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">CULTURA · 06</span><h3>Diversidade e diáspora</h3>
+            <p>A diversidade africana inclui diferentes povos, línguas, religiões e práticas culturais. O sincretismo ressignifica tradições; a diáspora levou essas trocas às Américas, onde Candomblé e Umbanda são exemplos brasileiros.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p><strong>Diversidade:</strong> há milhares de línguas, diferentes tradições religiosas e grande variedade de formas de organização social no continente. Não existe uma única “cultura africana”; identidades podem ser locais, nacionais, linguísticas, religiosas e transnacionais ao mesmo tempo.</p><p><strong>Diáspora e sincretismo:</strong> o tráfico transatlântico de pessoas escravizadas deslocou à força milhões de africanos e seus descendentes. Nas Américas, comunidades preservaram, combinaram e transformaram tradições sob condições de violência e repressão. Candomblé e Umbanda têm histórias e fundamentos próprios; são exemplos brasileiros de matrizes africanas e encontros culturais, não religiões idênticas.</p></details>
+          </article>
+          <article class="topic-card" data-topic="africa">
+            <span class="card-number">GEOPOLÍTICA · 07</span><h3>África no século XXI</h3>
+            <p>Recursos estratégicos atraem empresas multinacionais e interesses externos. A influência sobre investimentos, decisões econômicas e exploração de petróleo e minerais pode prolongar relações de dependência.</p>
+            <details class="topic-explanation"><summary>Ver explicação detalhada</summary><p>Governos africanos negociam com empresas e potências de várias regiões por investimento, infraestrutura, energia e acesso a minerais estratégicos. Esses acordos podem ampliar produção e serviços, mas também criar dependência se os lucros saem do país, os custos ambientais ficam com as comunidades ou as decisões não são transparentes.</p><p>A União Africana e a Área de Livre Comércio Continental Africana expressam iniciativas de cooperação e integração. O continente não é apenas espaço de disputa de atores externos: seus governos, organizações regionais e populações têm projetos e capacidade de ação próprios, ainda que com interesses e recursos desiguais.</p></details>
+          </article>
+        </div>
+
+        <div class="concept-compare" data-topic="africa">
+          <div class="compare-item"><h3>Colonialismo · controle direto</h3><p>O poder estrangeiro administra o território e exerce domínio político formal.</p></div>
+          <div class="compare-item"><h3>Neocolonialismo · dependência indireta</h3><p>Há independência formal, mas persistem influências e dependências econômicas ou estratégicas.</p></div>
+        </div>
+        <p class="inline-note" data-topic="africa"><strong>Um dado com contexto:</strong> o PDF menciona 54 países reconhecidos pela ONU e observa que algumas contagens chegam a 55 ao incluir a República Árabe Saaraui Democrática, no Saara Ocidental.</p>
+      </div>
+    </section>
+
+    <section class="review-section" id="revisao" data-section="revisao">
+      <div class="wrap review-layout">
+        <div class="review-aside">
+          <p class="section-kicker">03 / Fixação</p>
+          <h2>Confira o que ficou.</h2>
+          <p>Responda mentalmente antes de abrir cada resposta. As perguntas conectam os conceitos centrais dos materiais.</p>
+        </div>
+        <div class="review-list">
+          <details data-topic="revisao">
+            <summary>Como a China combina integração econômica e controle político?</summary>
+            <p>As reformas iniciadas no fim dos anos 1970 ampliaram o uso de mercados, o investimento externo e a produção voltada à exportação. Ao mesmo tempo, o Partido Comunista Chinês manteve o controle do sistema político e forte influência sobre setores estratégicos. A economia ficou mais integrada ao mundo sem que isso produzisse uma transição para uma democracia multipartidária. A resposta deve separar abertura econômica de abertura política.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>Por que Taiwan aparece como uma questão geopolítica?</summary>
+            <p>A República Popular da China reivindica Taiwan como parte de seu território, enquanto a ilha mantém governo, eleições e instituições próprias. O reconhecimento diplomático internacional é limitado e varia conforme as relações de cada país com Pequim e Taipei. A posição estratégica do estreito, as relações entre China e Estados Unidos e a importância de Taiwan na produção de semicondutores ampliam as consequências de uma crise. Soberania, administração e reconhecimento são dimensões relacionadas, mas distintas.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>Qual é a diferença entre colonialismo e neocolonialismo?</summary>
+            <p>No colonialismo, uma potência exerce domínio político e territorial direto sobre outro povo e organiza sua administração. No neocolonialismo, a independência formal existe, mas relações econômicas, financeiras ou estratégicas podem limitar a autonomia. Para identificar essa dependência, investigue quem controla recursos, define contratos, recebe os lucros e decide os rumos da produção. O conceito não deve ser aplicado automaticamente a toda relação com empresas ou governos estrangeiros.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>Como o comércio de commodities pode reforçar dependências?</summary>
+            <p>Minérios, petróleo e produtos agrícolas podem sair do país com pouco processamento e retornar como máquinas, combustíveis ou alimentos industrializados, que incorporam mais etapas, tecnologia e valor. A dependência de poucos produtos também deixa a receita vulnerável a mudanças de preço no mercado mundial. Ampliar o processamento local, a indústria, a infraestrutura e a qualificação profissional ajuda a diversificar a economia. Esse processo requer investimento e políticas de longo prazo; recursos naturais não o garantem por si só.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>O que o sincretismo religioso revela sobre cultura e resistência?</summary>
+            <p>Sincretismo é a combinação ou ressignificação de tradições que entram em contato. Na diáspora africana, comunidades submetidas à escravização e à repressão preservaram e transformaram práticas religiosas e culturais nas Américas. No Brasil, Candomblé e Umbanda são tradições distintas, com histórias próprias e diferentes matrizes. Estudá-las permite compreender tanto a violência do deslocamento forçado quanto a ação das comunidades na preservação e criação de culturas.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>Como as mudanças demográficas e a urbanização afetam a China?</summary>
+            <p>A migração do campo para as cidades acompanhou a industrialização e aumentou a demanda por moradia, transporte, energia e serviços públicos. Ao mesmo tempo, a queda da natalidade e o envelhecimento alteram a proporção entre pessoas em idade ativa e dependentes. Esses processos influenciam o mercado de trabalho, o consumo e os gastos sociais; por isso, população total e estrutura etária devem ser analisadas em conjunto.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>Por que a regionalização da África não pode ser tratada como uma divisão rígida?</summary>
+            <p>Regiões podem ser definidas por critérios físicos, históricos, culturais, econômicos ou políticos, e cada critério produz recortes diferentes. Norte da África, Sahel e África Subsaariana são categorias úteis em certos contextos, mas não descrevem sociedades homogêneas nem fronteiras absolutas. Uma boa análise explica o critério escolhido e reconhece as diferenças entre países e dentro deles.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>Como avaliar se a exploração de recursos beneficia a população local?</summary>
+            <p>Observe se a extração gera empregos e processamento no país, quanto da receita fica nos orçamentos públicos, quem recebe os lucros e quais são os custos ambientais e sociais. Também importa saber se os contratos são transparentes e se há investimento em saúde, educação e infraestrutura. A presença de recursos é apenas um ponto de partida; instituições, negociação e distribuição determinam parte dos resultados.</p>
+          </details>
+          <details data-topic="revisao">
+            <summary>O que torna a geopolítica africana do século XXI diferente de uma disputa passiva por recursos?</summary>
+            <p>Empresas e potências externas competem por investimentos e recursos estratégicos, mas governos, organizações regionais e populações africanas também negociam, regulam e definem prioridades. A União Africana e iniciativas de integração econômica mostram projetos de cooperação continental. Para analisar um acordo, considere os interesses dos atores locais, os benefícios e custos distribuídos e o poder de decisão de cada parte.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>Atlas de prova · Geografia · 3ª série</span>
+      <div class="source-links" aria-label="Materiais originais">
+        <a href="C H I N A e TAIWAN.pdf" target="_blank" rel="noopener">Abrir PDF · China e Taiwan ↗</a>
+        <a href="3ª SÉRIE - ÁFRICA.pdf" target="_blank" rel="noopener">Abrir PDF · África ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const themeToggle = document.querySelector("#theme-toggle");
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+
+    function setTheme(theme) {
+      const isDark = theme === "dark";
+      document.documentElement.dataset.theme = isDark ? "dark" : "light";
+      themeToggle.setAttribute("aria-pressed", String(isDark));
+      themeToggle.setAttribute("aria-label", isDark ? "Ativar tema claro" : "Ativar tema escuro");
+      themeToggle.title = isDark ? "Ativar tema claro" : "Ativar tema escuro";
+      themeToggle.querySelector("span").textContent = isDark ? "Claro" : "Escuro";
+      themeColor.content = isDark ? "#171d19" : "#f1eee7";
+      try {
+        localStorage.setItem("atlas-theme", isDark ? "dark" : "light");
+      } catch {}
+    }
+
+    themeToggle.addEventListener("click", () => {
+      setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+    });
+    setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
+
+    const filterButtons = [...document.querySelectorAll(".filter-button")];
+    const searchableItems = [...document.querySelectorAll("[data-topic]")];
+    const searchInput = document.querySelector("#search");
+    const noResults = document.querySelector("#no-results");
+    let activeFilter = "all";
+
+    function updateContent() {
+      const query = searchInput.value.trim().toLocaleLowerCase("pt-BR");
+      let visibleCount = 0;
+
+      for (const item of searchableItems) {
+        const matchesFilter = activeFilter === "all"
+          || item.dataset.topic === activeFilter
+          || (activeFilter === "revisao" && item.dataset.topic === "revisao");
+        const matchesSearch = !query || item.textContent.toLocaleLowerCase("pt-BR").includes(query);
+        const visible = matchesFilter && matchesSearch;
+        item.hidden = !visible;
+        if (visible) visibleCount += 1;
+      }
+
+      for (const section of document.querySelectorAll("[data-section]")) {
+        const hasVisibleItems = [...section.querySelectorAll("[data-topic]")].some(item => !item.hidden);
+        section.hidden = !hasVisibleItems;
+      }
+      noResults.style.display = visibleCount ? "none" : "block";
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        activeFilter = button.dataset.filter;
+        filterButtons.forEach(option => option.setAttribute("aria-pressed", String(option === button)));
+        updateContent();
+      });
+    });
+    searchInput.addEventListener("input", updateContent);
+  </script>
+</body>
+</html>
